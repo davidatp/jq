@@ -210,7 +210,8 @@ sections:
         either `false` or `null`, or 4 if no valid result was ever
         produced.  Normally jq exits with 2 if there was any usage
         problem or system error, 3 if there was a jq program compile
-        error, or 0 if the jq program ran.
+        error, 4 if there no valid result was produced or 0 if the 
+        jq program ran successfully.
 
         Another way to set the exit status is with the `halt_error`
         builtin function.
